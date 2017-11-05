@@ -1,1 +1,19 @@
 
+int sensorPin = A0;   //Input
+
+int sensorValue = 0;  //from sensor
+
+void setup () {
+
+  Serial.begin (9600);
+  }
+  
+voild loop () {
+
+  sensorValue = analogRead (sensorPin);
+  
+Serial.printIn (sensorValue);
+Serial.print (" ");
+
+delay (15);
+}
